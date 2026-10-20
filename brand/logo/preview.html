@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumora Studio Logo Kit</title>
+<link rel="icon" href="icon/favicon.svg" type="image/svg+xml">
+<style>
+  :root { --ink: #111113; --paper: #ecebf0; --accent: #7c6cff; --line: #2a2a2e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #18181b; color: var(--paper); font: 14px/1.5 "Segoe UI", system-ui, sans-serif; padding: 32px 16px; }
+  main { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 20px; font-weight: 600; margin: 0 0 4px; }
+  h2 { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #a1a1aa; margin: 40px 0 12px; }
+  p { color: #a1a1aa; margin: 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  figure { margin: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .stage { height: 180px; display: flex; align-items: center; justify-content: center; padding: 28px; }
+  .stage img { max-width: 100%; max-height: 100%; }
+  .light { background: #ffffff; } .dark { background: var(--ink); } .brand { background: var(--accent); }
+  figcaption { font: 12px/1.4 Consolas, monospace; padding: 8px 12px; color: #a1a1aa; border-top: 1px solid var(--line); }
+  .icons { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 20px; padding: 24px; border: 1px solid var(--line); border-radius: 10px; }
+  .icons img { image-rendering: pixelated; display: block; }
+  .icons span { display: block; font-size: 11px; color: #a1a1aa; margin-top: 6px; text-align: center; }
+  .swatches { display: flex; flex-wrap: wrap; gap: 12px; }
+  .sw { width: 160px; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .sw div { height: 64px; }
+  .sw p { font: 12px/1.4 Consolas, monospace; padding: 8px 10px; color: var(--paper); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Lumora Studio — logo kit</h1>
+  <p>Preview of every SVG in this folder. Open the files in <code>svg/</code>, <code>png/</code> and <code>icon/</code> for production use.</p>
+
+  <h2>Horizontal lockup</h2>
+  <div class="grid">
+    <figure><div class="stage light"><img src="svg/lumora-horizontal-color-on-light.svg" alt=""></div><figcaption>horizontal-color-on-light</figcaption></figure>
+    <figure><div class="stage dark"><img src="svg/lumora-horizontal-color-on-dark.svg" alt=""></div><figcaption>horizontal-color-on-dark</figcaption></figure>
+    <figure><div class="stage light"><img src="svg/lumora-horizontal-black.svg" alt=""></div><figcaption>horizontal-black</figcaption></figure>
+    <figure><div class="stage brand"><img src="svg/lumora-horizontal-white.svg" alt=""></div><figcaption>horizontal-white</figcaption></figure>
+  </div>
+
+  <h2>Stacked lockup</h2>
+  <div class="grid">
+    <figure><div class="stage light"><img src="svg/lumora-stacked-color-on-light.svg" alt=""></div><figcaption>stacked-color-on-light</figcaption></figure>
+    <figure><div class="stage dark"><img src="svg/lumora-stacked-color-on-dark.svg" alt=""></div><figcaption>stacked-color-on-dark</figcaption></figure>
+    <figure><div class="stage light"><img src="svg/lumora-stacked-black.svg" alt=""></div><figcaption>stacked-black</figcaption></figure>
+    <figure><div class="stage brand"><img src="svg/lumora-stacked-white.svg" alt=""></div><figcaption>stacked-white</figcaption></figure>
+  </div>
+
+  <h2>Symbol</h2>
+  <div class="grid">
+    <figure><div class="stage light"><img src="svg/lumora-symbol-color-on-light.svg" alt=""></div><figcaption>symbol-color-on-light</figcaption></figure>
+    <figure><div class="stage dark"><img src="svg/lumora-symbol-color-on-dark.svg" alt=""></div><figcaption>symbol-color-on-dark</figcaption></figure>
+    <figure><div class="stage light"><img src="svg/lumora-symbol-black.svg" alt=""></div><figcaption>symbol-black</figcaption></figure>
+    <figure><div class="stage brand"><img src="svg/lumora-symbol-white.svg" alt=""></div><figcaption>symbol-white</figcaption></figure>
+  </div>
+
+  <h2>Wordmark</h2>
+  <div class="grid">
+    <figure><div class="stage light"><img src="svg/lumora-wordmark-color-on-light.svg" alt=""></div><figcaption>wordmark-color-on-light</figcaption></figure>
+    <figure><div class="stage dark"><img src="svg/lumora-wordmark-color-on-dark.svg" alt=""></div><figcaption>wordmark-color-on-dark</figcaption></figure>
+    <figure><div class="stage light"><img src="svg/lumora-wordmark-black.svg" alt=""></div><figcaption>wordmark-black</figcaption></figure>
+    <figure><div class="stage brand"><img src="svg/lumora-wordmark-white.svg" alt=""></div><figcaption>wordmark-white</figcaption></figure>
+  </div>
+
+  <h2>App icon at native size</h2>
+  <div class="icons">
+    <div><img src="icon/lumora-app-icon-16.png" width="16" height="16" alt=""><span>16</span></div>
+    <div><img src="icon/lumora-app-icon-24.png" width="24" height="24" alt=""><span>24</span></div>
+    <div><img src="icon/lumora-app-icon-32.png" width="32" height="32" alt=""><span>32</span></div>
+    <div><img src="icon/lumora-app-icon-48.png" width="48" height="48" alt=""><span>48</span></div>
+    <div><img src="icon/lumora-app-icon-64.png" width="64" height="64" alt=""><span>64</span></div>
+    <div><img src="icon/lumora-app-icon-128.png" width="128" height="128" alt=""><span>128</span></div>
+    <div><img src="icon/lumora-app-icon-256.png" width="256" height="256" alt=""><span>256</span></div>
+  </div>
+
+  <h2>Colors</h2>
+  <div class="swatches">
+    <div class="sw"><div style="background:#111113"></div><p>Ink #111113</p></div>
+    <div class="sw"><div style="background:#ECEBF0"></div><p>Paper #ECEBF0</p></div>
+    <div class="sw"><div style="background:#7C6CFF"></div><p>Lumora Indigo #7C6CFF</p></div>
+    <div class="sw"><div style="background:#FFFFFF"></div><p>White #FFFFFF</p></div>
+  </div>
+</main>
+</body>
+</html>
