@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumora Studio</title>
+  <meta name="description" content="Lumora Studio makes creative desktop apps that run on your own computer. The first is Relight Studio AI, which changes the lighting of a photo after it was taken.">
+  <meta name="theme-color" content="#111113">
+  <meta property="og:title" content="Lumora Studio">
+  <meta property="og:description" content="Creative desktop apps that run on your own computer. Meet Relight Studio AI.">
+  <meta property="og:image" content="assets/lumora-app-icon-512.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/lumora-app-icon-512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Lumora Studio, back to top">
+      <img src="assets/lumora-horizontal-color-on-dark.svg" alt="Lumora Studio" width="150" height="38">
+    </a>
+    <nav aria-label="Main">
+      <a href="#relight">Relight Studio AI</a>
+      <a href="#next">What's next</a>
+      <a href="https://github.com/cesaressau21">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <h1>Desktop tools for shaping light in images.</h1>
+        <p class="lede">Lumora Studio makes creative apps for Windows that run on your own computer. The first one, Relight Studio AI, changes the lighting of a photo after it was taken.</p>
+        <div class="actions">
+          <a class="button primary" href="#relight">Get Relight Studio AI</a>
+          <a class="button ghost" href="https://github.com/cesaressau21/relight-studio-ai">See the code on GitHub</a>
+        </div>
+      </div>
+
+      <figure class="stage">
+        <canvas id="light-stage" tabindex="0" role="img"
+          aria-label="The Lumora Studio symbol lit by its own sphere of light. Drag the light, or focus here and use the arrow keys to move it."></canvas>
+        <figcaption>
+          <span>Drag the light. The blocks are shaded from a height map, the way Relight lights a photo.</span>
+          <button type="button" class="link-button" id="reset-light">Reset light</button>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="relight" id="relight" aria-labelledby="relight-title">
+      <div class="relight-head">
+        <img src="assets/relight-icon.png" alt="" width="88" height="88">
+        <div>
+          <h2 id="relight-title">Relight Studio AI</h2>
+          <p class="facts"><span class="badge">Public beta 0.1.0</span> <span>Windows 10 and 11, 64-bit</span> <span>Free and open source</span></p>
+        </div>
+      </div>
+
+      <div class="relight-body">
+        <div class="relight-intro">
+          <p class="lede">Change the lighting of a photo after it was taken. An AI model estimates the depth of the scene, and you place and drag lights directly on the image. Surfaces that face a light brighten, the rest darken, and objects cast shadows on what is behind them.</p>
+
+          <h3>How it works</h3>
+          <ol class="steps">
+            <li>Open a photo, or drop it on the window.</li>
+            <li>The app estimates its depth and the direction each surface faces.</li>
+            <li>Place lights and drag them. The photo updates as you move them.</li>
+            <li>Export a PNG, JPEG or WebP at full resolution.</li>
+          </ol>
+
+          <div class="download">
+            <a class="button relight-button" href="https://github.com/cesaressau21/relight-studio-ai/releases">Download for Windows</a>
+            <a class="button ghost" href="https://github.com/cesaressau21/relight-studio-ai/blob/main/docs/releases/v0.1.0-beta.md">Read the release notes</a>
+          </div>
+          <p class="note">The setup is about 2 MB. It then downloads what the app needs: about 3 GB with an NVIDIA GPU, or 0.5 GB to run on the CPU. Windows may warn that the publisher is unknown because the setup isn't code-signed yet. Choose More info, then Run anyway.</p>
+          <p class="caveat">It's a beta. Lighting from a single photo is an approximation, not a 3D reconstruction. <a href="https://github.com/cesaressau21/relight-studio-ai/blob/main/docs/STATUS.md">See the known limitations</a>.</p>
+        </div>
+
+        <dl class="features">
+          <div><dt>Lights on the photo</dt><dd>Point, area, directional, ambient and rim lights, with depth, color, temperature, softness and falloff.</dd></div>
+          <div><dt>Subject and background</dt><dd>AI matting separates the subject down to the hair. Each light can affect either one, or both.</dd></div>
+          <div><dt>Light patterns</dt><dd>Blinds, window panes, leaves, dots or your own image, projected over the scene.</dd></div>
+          <div><dt>New backgrounds</dt><dd>Put the subject on another photo and get lights that match its direction and color.</dd></div>
+          <div><dt>Ten presets</dt><dd>From Studio Portrait and Golden Hour to Moonlight and Venetian Blinds.</dd></div>
+          <div><dt>Runs locally</dt><dd>After the first download it works offline, and no photo leaves your computer.</dd></div>
+        </dl>
+      </div>
+
+    </section>
+
+    <section class="next" id="next" aria-labelledby="next-title">
+      <div class="slots" aria-hidden="true">
+        <div class="slot filled"><img src="assets/relight-icon.png" alt="" width="56" height="56"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+      </div>
+      <div>
+        <h2 id="next-title">More apps on the way</h2>
+        <p>Relight Studio AI is the first Lumora app. The next ones follow the same idea: one focused tool for images, running on your own machine, with the source in the open.</p>
+        <p><a href="https://github.com/cesaressau21">Follow along on GitHub</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="assets/lumora-symbol-color-on-dark.svg" alt="" width="28" height="28">
+    <p>© 2026 Lumora Studio. Relight Studio AI is released under the MIT License.</p>
+    <a href="https://github.com/cesaressau21">GitHub</a>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
