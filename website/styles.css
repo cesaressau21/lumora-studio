@@ -139,6 +139,16 @@ p { margin: 0; }
 
 .note { margin-top: 1.25rem; font-size: 0.9rem; color: var(--muted); max-width: var(--measure); }
 
+/* Screenshots: the first one wide, the other two side by side */
+.gallery { margin-top: clamp(40px, 6vw, 72px); }
+.gallery h3 { font-size: 1.6rem; letter-spacing: -0.02em; }
+.shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(16px, 2.5vw, 28px); margin-top: 1.25rem; }
+.shots figure { margin: 0; }
+.shots figure:first-child { grid-column: 1 / -1; }
+.shots a { display: block; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); }
+.shots img { width: 100%; height: auto; }
+.shots figcaption { margin-top: 10px; font-size: 0.95rem; color: var(--muted); }
+
 .upcoming {
   display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center;
   gap: clamp(28px, 5vw, 64px); margin-top: clamp(40px, 6vw, 72px);
@@ -200,6 +210,7 @@ p { margin: 0; }
 @media (max-width: 600px) {
   .site-header nav a:not(:last-child) { display: none; }
   .upcoming { grid-template-columns: minmax(0, 1fr); }
+  .shots { grid-template-columns: minmax(0, 1fr); }
   .slots { grid-template-columns: repeat(2, 64px); grid-template-rows: repeat(2, 64px); }
   .slot.filled img { width: 40px; }
   .site-footer { flex-wrap: wrap; }
