@@ -6,7 +6,7 @@ A static one-page site with no build step: `index.html`, `styles.css`, `hero3d.j
 - **Fallbacks:** without WebGL 2, the static SVG symbol is shown instead. With reduced motion turned on, a single still frame is rendered.
 - **Sections:** the studio and its principles, the apps (Relight Studio AI first, with download links to its GitHub releases), and a closing call to follow the studio on GitHub.
 - **Fonts:** Manrope, loaded from Google Fonts (SIL Open Font License 1.1).
-- **Assets:** copied from `../brand/logo` and from the Relight Studio AI icon. Copy them again if the logo kit changes.
+- **Assets:** copied from `../brand/logo` and from the Relight Studio AI brand kit (`assets/brand/icon` in its repo: `relight-app-icon.svg`, and `relight-app-icon-small.svg` for small sizes). Copy them again if either kit changes.
 
 ## Preview locally
 
