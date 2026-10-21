@@ -137,8 +137,13 @@ function init() {
       symbol.position.set(visibleWidth * 0.24, -visibleHeight * 0.02, 0);
       symbol.scale.setScalar(Math.min(visibleHeight / 118, (visibleWidth * 0.34) / 56));
     } else {
-      symbol.position.set(0, visibleHeight * 0.2, 0);
-      symbol.scale.setScalar(Math.min(1, visibleWidth / 110));
+      // Size and place the symbol in viewport pixels so it stays above the headline,
+      // which starts at 52vh on narrow screens (see styles.css).
+      const viewport = Math.min(h, window.innerHeight);
+      const unitsPerPx = visibleHeight / h;
+      const sizePx = Math.min(viewport * 0.34, w * 0.62);
+      symbol.scale.setScalar((sizePx * unitsPerPx) / 56);
+      symbol.position.set(0, (h / 2 - viewport * 0.27) * unitsPerPx, 0);
     }
   }
   new ResizeObserver(layout).observe(host);
